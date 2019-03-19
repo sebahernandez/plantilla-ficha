@@ -1,184 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Propiedad - ClasiPRO</title>
-		<!--font awesome-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-		<!-- Fotorama slider -->
-		<link href="css/fotorama.css" rel="stylesheet">	
-    <!-- Bootstrap -->
-		<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
-		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
 
   </head>
   <body>
-	
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
 		<div class="container">
-
-				<div class="logo mt-5">
-						<img src="./images/clasipro-original.png">
-					</div>
-
-		</div>
-
-		<section class="descripcion">
-	  
-	  <div class="container">
-
-		  	
-
-		  <div class="row">
-		  
-		  <div class="col-md-6">
-			  
-			  <div class="fotorama"  data-ratio="700/467" data-max-width="100% ">
-				  <img src="http://s.fotorama.io/1.jpg">
-				  <img src="http://s.fotorama.io/2.jpg">
-				  <img src="http://s.fotorama.io/3.jpg">
-				  <img src="http://s.fotorama.io/4.jpg">
-				  <img src="http://s.fotorama.io/5.jpg">
-			  </div>
-			  
-			  
-			 </div>
-			  
-			<div class="col-md-6">
-				
-				<div class="box--01">
-					<div class="pro--img">
-						<div><img src="./images/edificio--01.jpg"></div>
-						<ul>
-						<li><i class="fas fa-map-marker"></i> Francisco Cook 880</li>
-						<li>Las Condes, Santiago de Chile</li>
-					</ul>
-					</div>
-					
-					<div class="price">
-
-							<div><strong>Vende: Siena Inmobiliaria</strong></div>
-							<hr>
-							<div><strong>Desde	UF 14.297,00</strong></div>
-							<div><strong>Hasta	UF 15.897,00</strong></div>
-
-					</div>
-					<div class="float-right"><a href="#" class="btn btn-success mt-3 mb-3"><i class="fas fa-headset"></i> LLAMAR</a></div>
-					<div class="float-right"><a href="#" class="btn btn-danger mt-3 mb-3"><i class="fab fa-wpforms"></i> COTIZAR</a></div>
-					
-				</div>
-			  
-			 </div>
-			  
-		  </div>
-		  
-		</div>
-	  
-	  
-		</section>
 		
-		<section class="mb-5">
+			<img src="./images/clasipro-original.png" class="logo-clasipro">
+			
+		</div>
 
+		<div class="box-info container">
+			<span>Vende:</span> <em>Sierra Inmobiliaria</em>
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i> Las Condes, Santiago de Chile</p>
+			<hr>
+			<span>Desde:UF:0.000</span>
+			<span>Hasta:$:0.000</span>
+
+			<div class="mt-2 mb-2 enlaces">
+					<a class="btn btn-info" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown"> <i class="fa fa-calculator" aria-hidden="true"></i> Cotizar</a>
+					<a class="btn btn-success"><i class="fa fa-phone-square fa-rotate-90" aria-hidden="true"></i> Llamar</a>
+			</div>
+		</div>
+
+			<ol class="carousel-indicators">
+			  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+			  <!-- Slide One - Set the background image for this slide in the line below -->
+			  <div class="carousel-item active img-fluid" style="background-image: url('https://source.unsplash.com/vbSRUrNm3Ik/1920x1080')">
+			
+			  </div>
+			  <!-- Slide Two - Set the background image for this slide in the line below -->
+			  <div class="carousel-item" style="background-image: url('https://source.unsplash.com/MP0bgaS_d1c/1920x1080')">
+			
+			  </div>
+			  <!-- Slide Three - Set the background image for this slide in the line below -->
+			  <div class="carousel-item" style="background-image: url('https://source.unsplash.com/FBXuXp57eM0/1920x1080')">
+			  </div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+		  </div>
+
+			<!-- Modal structure -->
+			<div id="modal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+
+				<div class="contact">
+						<div class="head">
+						  <h3>Cotizar esta propiedad</h3>
+						  <i class="fa fa-comment fa-lg"></i>
+						</div>
+						<form>
+						  <label>Nombre</label>
+						  <input type="text">
+						  <label>Email</label>
+						  <input type="email">
+						  <label>Mensaje</label>
+						  <textarea placeholder="Escribe tu mensaje aquí"></textarea>
+						  <button type="button">Enviar</button>
+						</form>
+					  </div>
+
+
+			<!-- Modal content -->
+			</div>
+				
+		  <div class="container">
+				<div class="row mt-5">
+					<div class="col-md-8">
+						<h2><i class="fa fa-home text-info" aria-hidden="true"></i> Descripción</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit porro tempora est consequuntur illo 
+						ratione necessitatibus! At ex incidunt quibusdam, delectus labore eveniet, 
+						consequuntur aliquam sit modi numquam architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit porro tempora est consequuntur illo 
+						ratione necessitatibus! At ex incidunt quibusdam, delectus labore eveniet, 
+						consequuntur aliquam sit modi numquam architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit porro tempora est consequuntur illo 
+					     ratione necessitatibus! At ex incidunt quibusdam, delectus labore eveniet, 
+						consequuntur aliquam sit modi numquam architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit porro tempora est consequuntur illo 
+								ratione necessitatibus! At ex incidunt quibusdam, delectus labore eveniet, 
+							   consequuntur aliquam sit modi numquam architecto.</p>
+							   
+						
+					</div>
+					<div class="col-md-4">
+
+							<div class="card">
+									<img class="card-img-top" src="https://source.unsplash.com/vbSRUrNm3Ik/1920x1080" alt="Card image cap">
+									<div class="codigo">Código:0000</div>
+									<div class="card-header bg-info text-light">Datos Propiedad</div>
+								<ul class="list-group list-group-flush">
+									  <li class="list-group-item">Propietario:</li>
+									  <li class="list-group-item">Arquitectos:</li>
+									  <li class="list-group-item">Construye:</li>
+									  <li class="list-group-item">Fecha de entrega:</li>
+									  
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+	  
 			<div class="container">
 				<div class="row mt-5">
-
-					<div class="col-md-6">
-
-						<h2>Descripción</h2>
-						<hr>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequuntur delectus perspiciatis molestiae harum cum cumque 
-							aliquid, assumenda ab culpa impedit voluptatum quidem ducimus omnis sint est illo. Distinctio, optio.</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequuntur delectus perspiciatis molestiae harum cum cumque 
-								aliquid, assumenda ab culpa impedit voluptatum quidem ducimus omnis sint est illo. Distinctio, optio.</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequuntur delectus perspiciatis molestiae harum cum cumque 
-							 aliquid, assumenda ab culpa impedit voluptatum quidem ducimus omnis sint est illo. Distinctio, optio.</p>
-
-
+					<div class="col">
+				
+							<div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=Las%20Condes%2C%20Santiago%20de%20chile+()&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+							<a href="https://www.mapsdirections.info/calcular-ruta.html">Calcular Ruta</a></iframe></div><br />
 					</div>
-					<div class="col-md-6">
-		
-							<ul style="padding:0;">
-									<li><strong>Propietario:</strong> Siena Inmobiliaria</li>
-									<li><strong>Arquitectos:</strong> Alemparte y Barreda</li>
-									<li><strong>Vende:</strong> Siena Inmobiliaria</li>
-									<li><strong>Construye:</strong> Siena Constructora</li>
-									<li><strong>Fecha de entrega:</strong>2 Trimestre 2019</li>
-							</ul>
-
-
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.049809176033!2d-70.56422338436927!3d-33.395864702099935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cece288aee9d%3A0x6cd997d10dade91b!2sFrancisco+Cook+880%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1547332263654" 
-							width="100%" height="500" frameborder="0" style="border:0" allowfullscreen ></iframe>
-
-					</div>
-
-
 				</div>
 			</div>
 
-		</section>
-	  
-	  
-	  <div class="footer-bottom">
 
-				<div class="container">
-			
-					<div class="row">
-			
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			
-							<div class="copyright">
-			
-								© ClasiPRO 2018 Todos los derechos reservados
-			
-							</div>
-			
+			<footer class="bottom section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="copyright">
+							<p>© <span>2019</span> <a href="http://www.clasipro.cl" class="transition">ClasiPRO</a> Todos los derechos reservados.</p>
 						</div>
-			
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			
-							<div class="design">
-			
-								 Sitio web diseñador por tu-sistema SpA
-			
-							</div>
-			
-						</div>
-			
 					</div>
-			
 				</div>
-			
 			</div>
-	  
-	  
-	  
-	  
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script src="js/jquery-3.2.1.min.js"></script>
+		</footer>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
-		<script src="js/fotorama.js"></script>
-	  
-	  
+			
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+	
 	  <script>
-		  
-		$(function () {
-		$('.fotorama').fotorama();
-		});
 	  
-		</script>
 
-	<script>
-			fotoramaDefaults = {
-				arrows:true,
-				autoplay:true,
-			}
-		</script>
-		
+$("#modal").iziModal({
+
+    background: null,
+    width: 400,
+    zindex: 9999,
+
+});
+
+	 
+	 
+	 </script>
 
 
   </body>
