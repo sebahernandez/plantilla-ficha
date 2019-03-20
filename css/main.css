@@ -32,16 +32,17 @@
     height:auto;
     background: #fff;
     z-index: 9999;
-    top:300px;
     right:400px;
+    bottom: 0;
     padding:20px;
-    opacity: 0.9;
+   
 
 }
 
+
 @media (width:1440px){
     .box-info{
-        right:150px;
+        right:165px;
     }
 }
 
@@ -201,6 +202,8 @@ a > i{
     font-size:11px;
   }
 
+  
+
 /* media queries */
 
 @media (max-width:803px){
@@ -216,5 +219,22 @@ a > i{
     .logo-clasipro{
         width:140px;
     }
+
+    .box-info-movil{
+      background:#fff;
+      padding: 20px;
+      color:#000;
+      border-bottom: 4px solid #009cde;
+    }
+    .box-info-movil span{
+      display:block;
+    }
+}
+
+
+@media (min-width:804px){
+  .box-info-movil{
+    display:none;
+  }
 }
 
