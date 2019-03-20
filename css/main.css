@@ -203,7 +203,14 @@ a > i{
   }
 
   
+.amenities{
+  list-style: none;
+  padding-top:40px;
+}
 
+.amenities i{
+  color:#009cde;
+}
 /* media queries */
 
 @media (max-width:803px){
